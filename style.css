@@ -1,0 +1,252 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+body{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+    padding: 0;
+}
+.container{
+    max-width: 1080px;
+    margin: 0 auto;
+}
+.default-button{
+    background-color: #E02C6D;
+    color: #fff;
+    padding:10px 25px ;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 30px;
+    margin-top: 20px;
+    display: inline-block;
+}
+header a{
+    color: #3A3A3A;
+    
+}
+.top-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+header .logo-area a{
+    font-size:24px ;
+    font-weight: 600;
+}
+header .menu-area ul{
+    display: flex;
+    align-items: center;
+}
+header .menu-area ul li{
+    padding:10px ;
+}
+header .menu-area a{
+    font-size:16px ;
+    font-weight: 600;
+    color: #3A3A3A;
+}
+.mobile-menu .menu-content {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    align-items: center;
+  }
+  .mobile-menu {
+    display: none;
+  }
+  .mobile-menu i{
+    font-size: 25px
+  }
+.top-banner{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+    grid-gap: 20px;
+    padding: 30px 0;
+}
+.top-banner h2{
+font-size: 45px;
+line-height: 1.3em;
+font-weight: 600;
+margin-bottom: 0;
+}
+.top-banner p{
+    font-size: 14px;
+    font-weight: 600;
+    color: #3A3A3A;
+}
+.top-banner .image-area{
+background: url(images/Circle\ design.svg);
+background-repeat: no-repeat;
+background-position: center;
+background-size: contain;
+}
+.top-banner .image-area img{
+    width: 100%;
+}
+.top-brands .container{
+    border: 1px solid rgba(170, 170, 170, 0.217);
+    padding: 10px 20px;
+}
+.top-brands ul{
+    display: flex;
+    align-items: center;justify-content: space-between;
+}
+.popular-course{
+    margin-top:60px;
+}
+.courses {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-column-gap: 45px;
+    grid-row-gap: 45px;
+}
+.popular-course .container > h3{
+    
+    font-size:28px ;
+    font-weight: 600;
+    text-align: center;
+
+}
+.popular-course .more{
+    color: #E02C6D;
+    font-weight: 600;display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 5px;
+    text-transform: capitalize;
+    margin: 20px 0; 
+}
+.course{
+    background-color: #fff;
+    box-shadow:0 0 15px 0px #cdcdcd;
+    padding: 15px;
+    border-radius: 5px;
+}
+.courses img{
+    width: 100%
+  }
+.course h2{
+    font-size:28px ;
+    font-weight: 600;
+    margin: 0;
+}
+.course h4{
+    font-size:24px ;
+    font-weight: 400;
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+.course .meta{
+    font-size:14px ;
+    font-weight: 600;
+    color: #787885;
+} 
+.course .meta p{
+margin: 0;
+}
+.course .rating {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.course .rating ul{
+    display: flex;
+    color:#FB8200 ;
+    margin: 5px 0;
+    align-items: center;
+}
+
+ .join .default-button{
+        border-radius: 0;
+
+    }
+footer{
+    background-color: #0A0826;
+    padding: 40px 0;
+}
+footer .footer-content{
+    max-width: 300px;
+    margin: 0 auto;
+    color: #fff;
+    text-align: center;
+}
+.footer-content a{
+    color: #fff;
+}
+.footer-content ul{
+    display: flex;
+    justify-content: space-between;
+    max-width: 200px;
+    margin: auto;
+
+}
+.footer-content h4{
+font-size: 24px;
+font-weight: 600;
+margin: 0;
+
+}
+.footer-content p{
+    font-size: 14px;
+    font-weight: 600;
+    
+    }
+/* responsive style */
+
+  @media (max-width:835px){
+    header .top-header{
+        display: none;
+    }
+    header .mobile-menu{
+        display: block;
+    }
+    .top-banner {
+      padding: 30px 20px;
+  }
+    .top-banner h2 {
+      font-size: 30px;
+  }
+    .top-banner p {
+      font-weight: 400;
+  }
+  .top-brands ul{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+
+  }
+  .top-brands ul {
+	flex-wrap: wrap;
+}
+.top-brands ul li {
+	flex-basis: 25%;
+}
+    .courses {
+      grid-template-columns: repeat(2,1fr);
+      padding: 0 20px
+  }
+    .popular-course .more {
+      justify-content: center;
+  }
+  }
+  @media (max-width:450px){
+    .top-banner {
+      grid-template-columns: repeat(1,1fr);
+  }
+    .top-banner h2 {
+      font-size: 30px;
+  }
+    .top-banner p {
+      font-weight: 400;
+  }
+    .courses {
+      grid-template-columns: repeat(1,1fr);
+  }
+  
+  }
+  
+  
